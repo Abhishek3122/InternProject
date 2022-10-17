@@ -1,0 +1,22 @@
+.home {
+  padding: 20px;
+  margin: 20px;
+}
+
+.card_container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.inputForLocation {
+  padding: 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin: 10px 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid blue;
+}

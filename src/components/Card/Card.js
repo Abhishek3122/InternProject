@@ -1,5 +1,5 @@
 import React from "react";
-import './card.css'
+import "./card.css";
 /**
  * NOTES:
  * - On styling:
@@ -20,16 +20,16 @@ import './card.css'
 
 // 1. Card Class /////////////////////////////////////////////
 function CardImage(props) {
-  const isImageURL = props.image;
-  console.log(props.image);
+  let imgURL = props.image;
+
+  if (imgURL.indexOf('"') >= 0) imgURL = imgURL.substring(1, imgURL.length - 1);
   // If an image was passed:
-  if (isImageURL) {
+  if (imgURL) {
     return (
       <div className="styleImage">
         <img
           style={{ width: props.width + "px", marginTop: "-8%" }}
-          src={props.image}
-          
+          src={imgURL}
           alt="Seattle"
         />
       </div>
@@ -76,6 +76,5 @@ Card.defaultProps = {
   width: 350,
   title: "Template - Card Title",
   location: "Location label",
-  description: "Template description textbox"
+  description: "Template description textbox",
 };
-
