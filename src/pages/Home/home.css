@@ -15,8 +15,23 @@
   font-size: 16px;
   font-weight: 500;
   color: gray;
-  margin: 10px 0px;
   border: none;
   outline: none;
   border-bottom: 1px solid blue;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.reset-filter {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5%;
+  background-color: slateblue;
+  color: white;
+  border: none;
+  cursor: pointer;
 }

@@ -1,0 +1,11 @@
+.selectContainer {
+  width: 150px;
+}
+
+.selectContainer span {
+  display: none;
+}
+
+.selectContainer svg {
+  color: rgb(100, 100, 224);
+}
